@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import Title from "./ui/title";
 
 const Features = () => {
-  const { ref } = useSectionInView("Features");
+  const { ref } = useSectionInView("Features", 0.3);
 
   return (
     <section

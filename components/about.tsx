@@ -12,12 +12,12 @@ import Title from "./ui/title";
 
 
 const About = () => {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About", 0.3);
 
   return (
     <section
       ref={ref}
-      className="flex min-h-screen w-full snap-start scroll-mt-0 items-center justify-center overflow-x-hidden text-center leading-8 2xl:h-screen 2xl:snap-center"
+      className="flex min-h-screen w-full snap-start scroll-mt-0 items-center justify-center text-center leading-8 2xl:h-screen 2xl:snap-center"
       id="about"
     >
       <div className="flex-1 text-justify">

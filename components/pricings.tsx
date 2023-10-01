@@ -12,11 +12,11 @@ import Pricing from "./pricing";
 import Title from "./ui/title";
 
 const Pricings = () => {
-  const { ref } = useSectionInView("Pricings");
+  const { ref } = useSectionInView("Pricings", 0.3);
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen  snap-start scroll-mt-0 items-center justify-center overflow-x-hidden"
+      className="relative flex min-h-screen snap-start scroll-mt-0 items-center justify-center overflow-x-hidden"
       id="pricings"
     >
       <div className="flex-1 text-center">

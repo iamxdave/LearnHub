@@ -9,7 +9,7 @@ import { BiCartAlt } from "react-icons/bi";
 import { HiArrowSmRight } from "react-icons/hi";
 
 const Home = () => {
-  const { ref } = useSectionInView("Home");
+  const { ref } = useSectionInView("Home", 0.5);
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
