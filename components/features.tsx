@@ -19,7 +19,7 @@ const Features = () => {
       id="features"
     >
       <div className="flex-1">
-        <div className="relative mx-6 my-28 flex max-w-xl flex-col items-center justify-center text-sm sm:mx-auto sm:max-w-md sm:text-base lg:max-w-6xl 2xl:left-[50rem] 2xl:m-0 2xl:max-w-6xl 2xl:-translate-x-1/2">
+        <div className="relative mx-6 my-28 flex max-w-xl flex-col items-center justify-center text-sm sm:mx-auto sm:max-w-md sm:text-base lg:max-w-6xl 2xl:left-[50rem] 2xl:m-0 2xl:max-w-6xl 2xl:-translate-x-1/2 3xl:left-[40%]">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
