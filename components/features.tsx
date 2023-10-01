@@ -8,6 +8,7 @@ import Rocket from "@/public/rocket.png";
 import Sky from "@/public/sky.png";
 import { motion } from "framer-motion";
 import Title from "./ui/title";
+import Feature from "./feature";
 
 const Features = () => {
   const { ref } = useSectionInView("Features", 0.3);
@@ -32,36 +33,7 @@ const Features = () => {
           </motion.div>
           <ul className="grid-col-1 grid gap-x-8 gap-y-8 sm:mx-auto sm:max-w-md lg:mx-auto lg:max-w-6xl lg:grid-cols-3 lg:px-10">
             {featuresData.map((item, index) => (
-              <motion.li
-                key={index}
-                variants={fadeInAnimationVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                custom={index}
-                className="flex flex-col items-center border-2 border-primary-950 bg-white px-6 py-8 text-center shadow-primary shadow-accent-700 2xl:max-w-xs"
-              >
-                <div className="mb-5 flex items-center justify-center gap-2 2xl:mb-8 2xl:flex-col">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-8 w-8 text-accent-700"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <div className="text-[1.25rem] font-bold leading-snug sm:text-[1.5rem]">
-                    {item.title}
-                  </div>
-                </div>
-                <p className="text-justify text-[0.75rem] sm:text-[1rem]">
-                  {item.description}
-                </p>
-              </motion.li>
+              <Feature key={index} {...item} index={index}/>
             ))}
           </ul>
           <div className="relative h-80 w-full lg:h-[28rem] 2xl:h-0">
